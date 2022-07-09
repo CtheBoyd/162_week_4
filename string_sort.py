@@ -18,6 +18,6 @@ def string_sort():
         a_list[pos + 1] = value
         a_list.sort(key=lambda x: x.lower())
 
-    print(a_list)
+    #print(a_list)
 
 #string_sort()
