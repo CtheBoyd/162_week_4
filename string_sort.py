@@ -4,7 +4,7 @@
 # Description: Case-insensitive string insertion sort
 #
 
-a_list = ['Zebra', 'apple', 'maRker', 'marble']
+#a_list = ['Zebra', 'apple', 'maRker', 'marble']
 #a_list = ['zebra', 'apple', 'marker', 'marble']
 def string_sort():
     """
@@ -19,6 +19,6 @@ def string_sort():
         a_list[pos + 1] = value
 
 
-    print(a_list)
+    #print(a_list)
 
-string_sort()
+#string_sort()
