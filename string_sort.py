@@ -20,4 +20,4 @@ def string_sort():
 
     print(a_list)
 
-string_sort()
+#string_sort()
