@@ -6,7 +6,7 @@
 
 #a_list = ['Zebra', 'apple', 'maRker', 'marble']
 #a_list = ['zebra', 'apple', 'marker', 'marble']
-def string_sort():
+def string_sort(a_list):
     """
     Sorts a_list in ascending order
     """
