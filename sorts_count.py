@@ -6,26 +6,26 @@
 
 
 def bubble_count(a_list):
-  comp = 0
-  exch = 0
+  comparisons = 0
+  exchanges = 0
   """
   Sorts a_list in ascending order
   """
   for pass_num in range(len(a_list) - 1):
     for index in range(len(a_list) - 1 - pass_num):
-      comp += 1
+      comparisons += 1
       if a_list[index] > a_list[index + 1]:
-        exch += 1
+        exchanges += 1
         temp = a_list[index]
         a_list[index] = a_list[index + 1]
         a_list[index + 1] = temp
 
-  return a_list, comp, exch
+  return a_list, comparisons, exchanges
 
 
 def insertion_count(a_list):
-  comp = 0
-  exch = 0
+  comparisons = 0
+  exchanges = 0
 
   """
   Sorts a_list in ascending order
@@ -33,15 +33,15 @@ def insertion_count(a_list):
   for index in range(1, len(a_list)):
     value = a_list[index]
     pos = index - 1
-    comp += 1
+    comparisons += 1
     while pos >= 0 and a_list[pos] > value:
       a_list[pos + 1] = a_list[pos]
       pos -= 1
-    if pos > 0: comp += 1
+    if pos > 0: comparisons += 1
     a_list[pos + 1] = value
-    exch += 1
+    exchanges += 1
 
-  return a_list, comp, exch
+  return a_list, comparisons, exchanges
 
 
 
