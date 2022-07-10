@@ -42,7 +42,7 @@ def insertion_count(a_list):
             exchanges += 1
         a_list[pos + 1] = value
 
-    return a_list, comparisons, exchanges
+    return  comparisons, exchanges
 
 
 
