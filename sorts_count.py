@@ -37,15 +37,12 @@ def insertion_count(a_list):
         while pos >= 0 and a_list[pos] > value:
             a_list[pos + 1] = a_list[pos]
             pos -= 1
-        #exchanges += 1
+        exchanges += 1
         if pos > 0: comparisons += 1
         a_list[pos + 1] = value
-        exchanges += 1
+        #exchanges += 1
 
     return comparisons, exchanges
-
-
-
 
 #a_list =[7, 8,9,4]
 #print(bubble_count(a_list))
