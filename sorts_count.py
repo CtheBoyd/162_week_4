@@ -19,7 +19,7 @@ def bubble_count(a_list):
         a_list[index] = a_list[index + 1]
         a_list[index + 1] = temp
 
-  return a_list, comp, exch
+    return a_list, comp, exch
 
 
 def insertion_count(a_list):
@@ -35,7 +35,9 @@ def insertion_count(a_list):
     while pos >= 0 and a_list[pos] > value:
       a_list[pos + 1] = a_list[pos]
       pos -= 1
-    a_list[pos+1] = value
+      exch += 1
+    if pos > 0: comp += 1
+    a_list[pos + 1] = value
     exch += 1
 
   return a_list, comp, exch
@@ -43,6 +45,6 @@ def insertion_count(a_list):
 
 
 
-#a_list =[2, 4, 6, 3]
-#print(bubble_count(a_list))
-#print(insertion_count(a_list))
+a_list =[8, 7, 9, 4]
+print(bubble_count(a_list))
+print(insertion_count(a_list))
