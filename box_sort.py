@@ -28,13 +28,15 @@ class Box:
         return self.volume
 
     def volume(self):
-        volume = (self._height() * self._length() * self._width())
+        box_volume = (self._height() * self._length() * self._width())
 
-        return volume()
+        return box_volume()
 
 
 def box_sort(a_list):
 
+    # call volume list from Box class
+    # use box_sort to return volume
     """
     Sorts a_list in ascending order
     """
@@ -52,6 +54,5 @@ def box_sort(a_list):
 #b2 = Box(1.0, 1.0, 1.0)
 #b3 = Box(8.2, 8.2, 4.5)
 #a_list = [b1, b2, b3]
-#box_sort(a_list)
 
 #print(str(a_list))
