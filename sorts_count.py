@@ -34,15 +34,13 @@ def insertion_count(a_list):
         value = a_list[index]
         pos = index - 1
         comparisons += 1
-
         while pos >= 0 and a_list[pos] > value:
-            exchanges += 1
+            comparisons += 1
             a_list[pos + 1] = a_list[pos]
+            exchanges += 1
             pos -= 1
-
-        if pos > 0: comparisons += 1
+            exchanges += 1
         a_list[pos + 1] = value
-        exchanges += 1
 
     return a_list, comparisons, exchanges
 
