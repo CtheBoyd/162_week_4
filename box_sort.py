@@ -12,7 +12,7 @@ class Box:
         self._length = length
         self._width = width
         self._height = height
-        self.volume = []
+        self.volume = ()
 
 
     """getters"""
@@ -25,14 +25,12 @@ class Box:
     def get_height(self):
         return self._height
 
-    def get_volume(self):
-        return self.volume
-
     def volume(self):
-        volume = (self._height() * self._length() * self._width())
+        volume = self._height() * self._length() * self._width()
+        return volume
 
-
-        return volume()
+    def __repr__(self):
+        return f'Box(volume={self.volume})'
 
 
 def box_sort(box_list):
@@ -56,5 +54,5 @@ def box_sort(box_list):
 #b2 = Box(1.0, 1.0, 1.0)
 #b3 = Box(8.2, 8.2, 4.5)
 #box_list = [b1, b2, b3]
+#print(box_list)
 
-#print(str(box_list))
