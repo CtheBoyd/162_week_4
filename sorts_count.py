@@ -22,7 +22,7 @@ def bubble_count(a_list):
   return a_list, comp, exch
 
 
-def insertion_sort(a_list):
+def insertion_count(a_list):
   comp, exch = 0, 0
 
   """
@@ -45,4 +45,4 @@ def insertion_sort(a_list):
 
 #a_list =[2, 4, 6, 3]
 #print(bubble_count(a_list))
-#print(insertion_sort(a_list))
+#print(insertion_count(a_list))
