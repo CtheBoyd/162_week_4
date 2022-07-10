@@ -35,8 +35,8 @@ class Box:
 
 def box_sort(a_list):
 
-    # call volume list from Box class
-    # use box_sort to return volume
+    # use get_volume list from Box class
+    # use box_sort to return box_volume list sorted
     """
     Sorts a_list in ascending order
     """
