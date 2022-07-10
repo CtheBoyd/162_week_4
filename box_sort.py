@@ -12,6 +12,7 @@ class Box:
         self._length = length
         self._width = width
         self._height = height
+        self.volume = []
 
 
     """getters"""
@@ -28,31 +29,32 @@ class Box:
         return self.volume
 
     def volume(self):
-        box_volume = (self._height() * self._length() * self._width())
-
-        return box_volume()
+        volume = (self._height() * self._length() * self._width())
 
 
-def box_sort(a_list):
+        return volume()
+
+
+def box_sort(box_list):
 
     # use get_volume list from Box class
     # use box_sort to return box_volume list sorted
     """
     Sorts a_list in ascending order
     """
-    for index in range(1, len(a_list)):
-        value = a_list[index]
+    for index in range(1, len(box_list)):
+        value = box_list[index]
         pos = index - 1
-        while pos >= 0 and a_list[pos] > value:
-            a_list[pos + 1] = a_list[pos]
+        while pos >= 0 and box_list[pos] > value:
+            box_list[pos + 1] = box_list[pos]
             pos -= 1
-        a_list[pos + 1] = value
+        box_list[pos + 1] = value
 
-    return a_list
+    return box_list
 
 #b1 = Box(3.4, 19.8, 2.1)
 #b2 = Box(1.0, 1.0, 1.0)
 #b3 = Box(8.2, 8.2, 4.5)
-#a_list = [b1, b2, b3]
+#box_list = [b1, b2, b3]
 
-#print(str(a_list))
+#print(str(box_list))
