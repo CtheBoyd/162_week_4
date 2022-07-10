@@ -45,6 +45,6 @@ def insertion_count(a_list):
 
 
 
-a_list =[8, 7, 9, 4]
-print(bubble_count(a_list))
-print(insertion_count(a_list))
+#a_list =[8, 7, 9, 4]
+#print(bubble_count(a_list))
+#print(insertion_count(a_list))
